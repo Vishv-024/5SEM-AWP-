@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>jQuery UI Droppable</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/
+							themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style type="text/css">
+        .contianer{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        #drag {
+            width: 100px;
+            height: 100px;
+            /* float: left; */
+            margin: 10px;
+            background-color: red;
+            padding: 10px;
+        }
+
+        #non-drop {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 10px;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        #drop {
+            width: 100px;
+            height: 100px;
+            /* float: left; */
+            margin: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+    </script>
+    <script>
+        $(function () {
+            $("#drag").draggable();
+            $("#non-drop").draggable();
+            $("#drop").droppable({
+                accept: "#drag",
+                drop: function () {
+                    alert("I am dropped");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="contianer">
+        
+            <div id="drag">
+
+
+                <p>Drag Me</p>
+
+
+            </div>
+            <!-- <div id="non-drop">
+
+
+                <p>Non droppable</p>
+
+
+            </div> -->
+            <div id="drop">
+
+
+                <p>Non draggable</p>
+
+
+            </div>
+    </div>
+</body>
+
+</html>
