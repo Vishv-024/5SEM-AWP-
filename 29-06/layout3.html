@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #a,#d{
+            width: 100%;
+            height: 15vh;
+            margin: 5px ;
+            text-align: center;
+            background-color:green;
+            padding-top: 10px;
+        }
+        #b{
+            align-items: center;
+            width: 98%;
+            height: 60vh;
+            background-color:yellowgreen;
+            margin-left: 15px;
+            padding-top: 10px;
+        }
+        #b1{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 20px;
+            padding-top: 10px;
+            align-items: center;
+        }
+        #b2{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 20px;
+            padding-top: 60px;
+        }
+        #b3{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 20px;
+            padding-top: 60px;
+            
+        }
+        #b1 button,#b2 button,#b3 button{
+            height: 50px;
+            width: 5%;
+            background-color: bisque;
+            border-radius: 100px;
+        } 
+        button:hover{
+            background-color: black;
+            color:red;
+        }       
+    </style>
+</head>
+<body>
+    <div id="a">
+        <h1>
+            Lorem ipsum dolor sit amet.
+        </h1>
+    </div>
+    <div id="d">
+       <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium culpa blanditiis quaerat! Laudantium quas nesciunt saepe iusto nulla error dicta?
+       </h3>
+    </div>
+    <div id="b">
+            <div id="b1">
+                <button>button1</button>
+                <button>button2</button>
+                <button>button3</button>
+                
+            </div>
+            <div id="b2">
+                <button>button4</button>
+                <button>button5</button>
+                <button>button6</button>
+                
+            </div>
+            <div id="b3">
+                <button>button7</button>
+                <button>button8</button>
+                <button>button9</button>
+                
+            </div>
+         
+       </div>
+    
+</body>
+</html>
